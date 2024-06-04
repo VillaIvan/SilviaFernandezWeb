@@ -1,7 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import NavBar from "@/components/NavBar.astro";
+
+import CarouselSection from "@/components/CarouselSection.astro";
+import Swiper from "@/components/Swiper.jsx";
+import Footer from "@/components/Footer.astro";
+import Counter from "@/components/Counter.astro";
 ---
 
 <Layout title="Silvia Fernandez">
-  <main></main>
+  <main>
+    <NavBar />
+    <CarouselSection />
+    <Swiper client:load />
+    <Counter />
+    <Footer />
+  </main>
 </Layout>

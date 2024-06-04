@@ -12,6 +12,7 @@ export default {
       colors: {
         primary: "#0F7261",
         secondary: "#999999",
+        oscure: "#1A1A1A",
       },
     },
   },

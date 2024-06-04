@@ -1,0 +1,35 @@
+.carousel {
+  height: auto;
+  margin: 20px 0;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fondo {
+  background-image: url("group.jpeg");
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: "#FFFFFF";
+}
