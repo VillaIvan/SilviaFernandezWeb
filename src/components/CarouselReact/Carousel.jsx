@@ -9,13 +9,12 @@ import "swiper/css/navigation";
 
 import "./styles.css";
 
-import ilus from "@/components/assets/bro.svg";
 // import required modules
 import { Keyboard, Pagination, Navigation } from "swiper/modules";
 
 export default function App() {
   return (
-    <div className="h-[85vh] w-[90%]  md:h-[80vh]  animate-fade-in-down p-5 md:p-10 mx-auto">
+    <div className="h-[85vh] w-[100%]  md:h-[100vh]  animate-fade-in-down  mx-auto ">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -30,94 +29,70 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="image relative flex flex-col md:flex-row items-center justify-center md:h-[100%] my-auto gap-8 p-5 rounded-xl ">
-            <div className="w-[80%] md:w-1/2 flex flex-col gap-10 justify-center mx-auto sm:mx-0">
-              <h3 className="text-xl text-white text-center md:text-start">
+          <div className="fondo1 parallax image relative flex flex-col md:flex-row items-center justify-center md:justify-normal md:pl-24 md:h-[100%] my-auto gap-8  rounded-xl ">
+            <div className="w-[80%] md:w-[55%] xl:w-[35%] flex flex-col gap-10 justify-center mx-auto  sm:mx-0 bg-white bg-opacity-60 rounded-xl p-5 shadow-md">
+              <h3 className="text-xl text-oscure text-center md:text-start">
                 More Luxury and trending
               </h3>
-              <h1 className="text-4xl md:text-4xl lg:text-5xl font-semibold text-white text-center md:text-start">
+              <h1 className="text-4xl md:text-4xl lg:text-5xl font-semibold text-oscure text-center md:text-start">
                 The Commercial and Personal Insurance Specialists for over 35
                 years.
               </h1>
 
-              <button className="w-44 px-[2rem] bg-white text-lg p-2 text-primary mx-auto lg:mx-0 font-semibold hover:bg-secondary hover:text-white rounded-md">
+              <button className="w-44 px-[2rem] bg-primary text-lg p-2 text-white mx-auto lg:mx-0 font-semibold hover:bg-white hover:text-primary rounded-md">
                 Shop Now
               </button>
-            </div>
-            <div className="">
-              <img
-                src="https://i.ibb.co/nCPBhDH/bro.png"
-                alt="imagen de ejemplo"
-              ></img>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="image relative flex flex-col md:flex-row items-center justify-center md:h-[100%] my-auto gap-8 p-5 rounded-xl ">
-            <div className="w-[80%] md:w-1/2 flex flex-col gap-10 justify-center mx-auto sm:mx-0">
-              <h3 className="text-xl text-white text-center md:text-start">
+          <div className="fondo2 parallax image relative flex flex-col md:flex-row items-center justify-center md:justify-end md:pr-24 md:h-[100%] my-auto gap-8  rounded-xl ">
+            <div className="w-[80%] md:w-[55%] xl:w-[35%] flex flex-col gap-10 justify-center mx-auto  sm:mx-0 bg-white bg-opacity-60 rounded-xl p-5 shadow-md">
+              <h3 className="text-xl text-oscure text-center md:text-start">
                 More Luxury and trending
               </h3>
-              <h1 className="text-4xl md:text-4xl lg:text-5xl font-semibold text-white text-center md:text-start">
+              <h1 className="text-4xl md:text-4xl lg:text-5xl font-semibold text-oscure text-center md:text-start">
                 The Commercial and Personal Insurance Specialists for over 35
                 years.
               </h1>
 
-              <button className="w-44 px-[2rem] bg-secondary text-lg p-2 text-white mx-auto md:mx-0">
+              <button className="w-44 px-[2rem] bg-primary text-lg p-2 text-white mx-auto lg:mx-0 font-semibold hover:bg-white hover:text-primary rounded-md">
                 Shop Now
               </button>
-            </div>
-            <div className="w-[75%] sm:w-[70%] md:w-[50%] lg:w-[45%]">
-              <img
-                src="https://i.ibb.co/nCPBhDH/bro.png"
-                alt="imagen de ejemplo"
-              ></img>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="image relative flex flex-col md:flex-row items-center justify-center md:h-[100%] my-auto gap-8 p-5 rounded-xl ">
-            <div className="w-[80%] md:w-1/2 flex flex-col gap-10 justify-center mx-auto sm:mx-0">
-              <h3 className="text-xl text-white text-center md:text-start">
+          <div className="fondo3 parallax image relative flex flex-col md:flex-row items-center justify-center md:justify-start md:pl-24 md:h-[100%] my-auto gap-8  rounded-xl ">
+            <div className="w-[80%] md:w-[55%] xl:w-[35%] flex flex-col gap-10 justify-center mx-auto  sm:mx-0 bg-white bg-opacity-60 rounded-xl p-5 shadow-md">
+              <h3 className="text-xl text-oscure text-center md:text-start">
                 More Luxury and trending
               </h3>
-              <h1 className="text-4xl md:text-4xl lg:text-5xl font-semibold text-white text-center md:text-start">
+              <h1 className="text-4xl md:text-4xl lg:text-5xl font-semibold text-oscure text-center md:text-start">
                 The Commercial and Personal Insurance Specialists for over 35
                 years.
               </h1>
 
-              <button className="w-44 px-[2rem] bg-secondary text-lg p-2 text-white mx-auto md:mx-0">
+              <button className="w-44 px-[2rem] bg-primary text-lg p-2 text-white mx-auto lg:mx-0 font-semibold hover:bg-white hover:text-primary rounded-md">
                 Shop Now
               </button>
-            </div>
-            <div className="w-[75%] sm:w-[70%] md:w-[50%] lg:w-[45%]">
-              <img
-                src="https://i.ibb.co/nCPBhDH/bro.png"
-                alt="imagen de ejemplo"
-              ></img>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="image relative flex flex-col md:flex-row items-center justify-center md:h-[100%] my-auto gap-8 p-5 rounded-xl ">
-            <div className="w-[80%] md:w-1/2 flex flex-col gap-10 justify-center mx-auto sm:mx-0">
-              <h3 className="text-xl text-white text-center md:text-start">
+          <div className="fondo4 parallax image relative flex flex-col md:flex-row items-center justify-center md:justify-start md:pl-24 md:h-[100%] my-auto gap-8  rounded-xl ">
+            <div className="w-[80%] md:w-[55%] xl:w-[35%] flex flex-col gap-10 justify-center mx-auto  sm:mx-0 bg-white bg-opacity-60 rounded-xl p-5 shadow-md">
+              <h3 className="text-xl text-oscure text-center md:text-start">
                 More Luxury and trending
               </h3>
-              <h1 className="text-4xl md:text-4xl lg:text-5xl font-semibold text-white text-center md:text-start">
+              <h1 className="text-4xl md:text-4xl lg:text-5xl font-semibold text-oscure text-center md:text-start">
                 The Commercial and Personal Insurance Specialists for over 35
                 years.
               </h1>
 
-              <button className="w-44 px-[2rem] bg-secondary text-lg p-2 text-white mx-auto md:mx-0">
+              <button className="w-44 px-[2rem] bg-primary text-lg p-2 text-white mx-auto  font-semibold hover:bg-white hover:text-primary rounded-md">
                 Shop Now
               </button>
-            </div>
-            <div className="w-[75%] sm:w-[70%] md:w-[50%] lg:w-[45%]">
-              <img
-                src="https://i.ibb.co/nCPBhDH/bro.png"
-                alt="imagen de ejemplo"
-              ></img>
             </div>
           </div>
         </SwiperSlide>

@@ -25,11 +25,26 @@ body {
   object-fit: cover;
 }
 
-.fondo {
-  background-image: url("group.jpeg");
+.fondo1 {
+  background-image: url("/src/components/assets/group.jpeg");
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: "#FFFFFF";
+.fondo2 {
+  background-image: url("https://images.pexels.com/photos/8439655/pexels-photo-8439655.jpeg");
+}
+.fondo3 {
+  background-image: url("https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.fondo4 {
+  background-image: url("https://images.pexels.com/photos/3831552/pexels-photo-3831552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  max-width: 100%;
+  position: relative;
 }
