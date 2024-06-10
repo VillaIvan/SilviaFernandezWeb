@@ -1,0 +1,139 @@
+---
+
+---
+
+<div class="md:mt-8 mx-auto w-[95%] md:w-full md:mb-10 border rounded-lg">
+  <div class="bg-white py-8 px-6 rounded-lg sm:px-10">
+    <h1 class="text-center font-bold text-primary text-3xl p-5">
+      Contactá un asesor
+    </h1>
+    <form
+      class="md:grid md:grid-cols-2 flex flex-col gap-4 mb-0"
+      action="#"
+      method="POST"
+    >
+      <div class="">
+        <label for="name" class="block text-md font-medium text-oscure"
+          >Nombre</label
+        >
+        <div class="mt-1">
+          <input
+            id="name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+            class="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-secondary"
+          />
+        </div>
+      </div>
+      <div class="">
+        <label for="text" class="block text-md font-medium text-oscure"
+          >Apellido</label
+        >
+        <div class="mt-1">
+          <input
+            id="surname"
+            name="surname"
+            type="text"
+            autocomplete=""
+            required
+            class="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-secondary"
+          />
+        </div>
+      </div>
+      <div class="">
+        <label for="email" class="block text-md font-medium text-oscure"
+          >Correo Electronico</label
+        >
+        <div class="mt-1">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+            class="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-secondary"
+          />
+        </div>
+      </div>
+      <div class="mt-1">
+        <div>
+          <label for="number" class="block text-md font-medium text-oscure"
+            >Numero de Contacto</label
+          >
+          <input
+            id="phone"
+            name="phone"
+            type="text"
+            autocomplete=""
+            required
+            class="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-secondary"
+          />
+        </div>
+      </div>
+
+      <div class="mt-1">
+        <div>
+          <label for="text" class="block text-md font-medium text-oscure"
+            >Ciudad</label
+          >
+          <input
+            id="city"
+            name="city"
+            type="text"
+            autocomplete=""
+            required
+            class="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-secondary"
+          />
+        </div>
+      </div>
+      <div class="mt-1">
+        <div>
+          <label
+            for="motivo-select"
+            class="block text-md font-medium text-oscure"
+            >Elija un motivo:</label
+          >
+
+          <select
+            name="motivo"
+            id="motivo-select"
+            required
+            class="w-full border border-gray-300 p-3 rounded-lg shadow-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-secondary"
+          >
+            <option value="">--Elija una opcion--</option>
+            <option value="dog">Consulta</option>
+            <option value="cat">Aseguradora</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mt-1 col-span-2">
+        <div>
+          <label for="text" class="block text-md font-medium text-oscure"
+            >¿Como podemos ayudarte?</label
+          >
+          <input
+            id="msg"
+            name="msg"
+            type="text"
+            autocomplete=""
+            required
+            class="w-full sm:h-20 border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-secondary"
+          />
+        </div>
+      </div>
+      <div class="mt-1 col-span-2">
+        <input
+          class="w-full bg-primary hover:bg-white text-white font-bold py-2 px-4 border border-primary hover:text-primary rounded"
+          type="submit"
+        />
+      </div>
+    </form>
+  </div>
+</div>

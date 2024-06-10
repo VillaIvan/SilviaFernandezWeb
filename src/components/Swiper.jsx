@@ -6,38 +6,48 @@ import "swiper/css/free-mode";
 
 import { FreeMode, Pagination } from "swiper/modules";
 
-import SpaceCity from "@/components/assets/single.jpeg";
+import SpaceCity from "./assets/group.jpeg";
+import ART from "./assets/ART.jpg";
+import Casa from "./assets/casa.jpg";
+import Auto from "./assets/seguroauto.jpg";
+import Seguro from "./assets/comercioseguro.webp";
 
 export const ServiceData = [
   {
-    title: "Development",
+    title: "ART",
     content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
-    backgroundImage: SpaceCity,
+    backgroundImage: ART.src,
+    class: "",
   },
   {
-    title: "Branding",
+    title: "AUTOMOTOR",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: SpaceCity,
+    backgroundImage: Auto.src,
+    class: "",
   },
   {
-    title: "Design",
+    title: "COMERCIOS",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: SpaceCity,
+    backgroundImage: Seguro.src,
+    class: "bg-right",
   },
   {
-    title: "Seo",
+    title: "HOGAR",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: SpaceCity,
+    backgroundImage: Casa.src,
+    class: "",
   },
   {
     title: "Management",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: SpaceCity,
+    backgroundImage: SpaceCity.src,
+    class: "",
   },
   {
     title: "Production",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: SpaceCity,
+    backgroundImage: SpaceCity.src,
+    class: "",
   },
 ];
 
@@ -53,6 +63,9 @@ const ActiveSlider = () => {
             slidesPerView: 2,
           },
           "@1.50": {
+            slidesPerView: 2,
+          },
+          "@1.750": {
             slidesPerView: 3,
           },
         }}
@@ -61,18 +74,18 @@ const ActiveSlider = () => {
           clickable: true,
         }}
         modules={[FreeMode]}
-        className="max-w-[100%] lg:max-w-[80%]"
+        className="max-w-[100%] lg:max-w-[80%]  "
       >
         {ServiceData.map((item) => (
           <SwiperSlide key={item.title}>
-            <div className="flex flex-col mx-auto group relative shadow-lg text-primary rounded-xl px-6 py-8 h-[550px] w-[350px] md:h-[400px]  md:w-[300px] overflow-hidden cursor-pointer">
+            <div className="flex flex-col mx-auto group relative shadow-lg text-white rounded-xl px-6 py-8 h-[550px] w-[350px] md:h-[400px]  md:w-[400px] overflow-hidden cursor-pointer">
               <div
-                className="absolute inset-0 bg-cover bg-center"
+                className="absolute inset-0 bg-cover bg-center "
                 style={{ backgroundImage: `url(${item.backgroundImage})` }}
               />
-              <div className="absolute inset-0 bg-black  group-hover:opacity-50" />
-              <div className="relative flex flex-col gap-3">
-                <h1 className="text-xl lg:text-2xl">{item.title} </h1>
+              <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-0 transition-opacity duration-300" />
+              <div className="relative flex flex-col h-full justify-center items-center gap-3 opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                <h1 className="text-5xl font-semibold">{item.title} </h1>
                 <p className="lg:text-[18px]">{item.content} </p>
               </div>
             </div>
