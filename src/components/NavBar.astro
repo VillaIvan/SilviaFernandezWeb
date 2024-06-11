@@ -2,7 +2,7 @@
 import logo from "@/components/assets/SFslogan.png";
 ---
 
-<nav class="bg-white">
+<nav class="bg-white landing-section" data-header-color="white">
   <div
     class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
   >
@@ -17,7 +17,7 @@ import logo from "@/components/assets/SFslogan.png";
       aria-controls="navbar-default"
       aria-expanded="false"
     >
-      <span class="sr-only">Open main menu</span>
+      <span class="sr-only">Abrir menu</span>
       <svg
         class="w-5 h-5"
         aria-hidden="true"
@@ -35,7 +35,7 @@ import logo from "@/components/assets/SFslogan.png";
     </button>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul
-        class="font-black flex flex-col p-4 md:p-0 mt-4 bg-white md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white text-center gap-32 md:gap-10 text-5xl md:text-lg h-[82vh] md:h-auto justify-center items-center"
+        class="font-black flex flex-col p-4 md:p-0 mt-4 bg-white md:flex-row rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white text-center gap-32 md:gap-10 text-5xl md:text-lg h-[82vh] md:h-auto justify-center items-center"
       >
         <li class="text-primary hover:opacity-50 font-semibold">
           <a href="/">SERVICIOS</a>
@@ -45,8 +45,9 @@ import logo from "@/components/assets/SFslogan.png";
         </li>
         <li class="text-white hover:text-primary font-semibold">
           <a
+            id="contact-button"
             class="py-3 pt-6 md:pt-4 px-8 bg-primary text-center hover:bg-white border border-secondary border-spacing-0 rounded-lg"
-            href="/">COTIZÁR</a
+            href="#contact">CONTACTANOS</a
           >
         </li>
       </ul>
@@ -61,29 +62,10 @@ import logo from "@/components/assets/SFslogan.png";
   menuToggle.addEventListener("click", () => {
     navList.classList.toggle("hidden");
   });
+  document
+    .getElementById("contact-button")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    });
 </script>
-
-<!-- <nav
-  class="py-3 sm:px-20 flex flex-col md:flex-row md:justify-between
-items-center"
->
-  <div class="">
-    <img class="w-[200px] md:w-[250px]" src="/SFslogan.png" />
-  </div>
-  <div class="">
-    <ul class="flex flex-row justify-center items-center gap-8 text-lg">
-      <li class="text-primary hover:opacity-50 font-semibold">
-        <a href="/">SERVICIOS</a>
-      </li>
-      <li class="text-primary hover:opacity-50 font-semibold">
-        <a href="/">NOSOTROS</a>
-      </li>
-      <li class="text-white hover:text-primary font-semibold">
-        <a
-          class="p-3 px-8 bg-primary hover:bg-white border border-secondary border-spacing-0 rounded-lg"
-          href="/">COTIZÁR</a
-        >
-      </li>
-    </ul>
-  </div>
-</nav> -->

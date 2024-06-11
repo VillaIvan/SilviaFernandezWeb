@@ -1,25 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import NavBar from "@/components/NavBar.astro";
-
 import CarouselSection from "@/components/CarouselSection.astro";
 import Swiper from "@/components/Swiper.jsx";
-import Footer from "@/components/Footer.astro";
 import Counter from "@/components/Counter.astro";
 import Parallax from "@/components/Parallax.astro";
 import Brand from "@/components/Brand.astro";
 import Contact from "@/components/Contact.astro";
+import Whatsapp from "@/components/Whatsapp.astro";
 ---
 
 <Layout title="Silvia Fernandez">
   <main>
-    <NavBar />
     <CarouselSection />
-    <Swiper client:load />
     <Counter />
     <Parallax />
+    <Swiper client:load />
     <Brand />
     <Contact />
-    <Footer />
+    <Whatsapp />
   </main>
 </Layout>

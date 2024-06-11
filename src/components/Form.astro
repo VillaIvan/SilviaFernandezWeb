@@ -4,11 +4,9 @@
 
 <div class="md:mt-8 mx-auto w-[95%] md:w-full md:mb-10 border rounded-lg">
   <div class="bg-white py-8 px-6 rounded-lg sm:px-10">
-    <h1 class="text-center font-bold text-primary text-3xl p-5">
-      Contactá un asesor
-    </h1>
+    <h1 class="text-center font-bold text-primary text-5xl p-5">Contactános</h1>
     <form
-      class="md:grid md:grid-cols-2 flex flex-col gap-4 mb-0"
+      class="md:grid md:grid-cols-2 flex flex-col gap-4 mb-0 font-secondary"
       action="#"
       method="POST"
     >
@@ -60,7 +58,7 @@
       <div class="mt-1">
         <div>
           <label for="number" class="block text-md font-medium text-oscure"
-            >Numero de Contacto</label
+            >Teléfono</label
           >
           <input
             id="phone"
@@ -76,7 +74,7 @@
       <div class="mt-1">
         <div>
           <label for="text" class="block text-md font-medium text-oscure"
-            >Ciudad</label
+            >Localidad</label
           >
           <input
             id="city"
@@ -92,43 +90,36 @@
         <div>
           <label
             for="motivo-select"
-            class="block text-md font-medium text-oscure"
-            >Elija un motivo:</label
+            class="block text-md font-medium text-oscure">Motivo:</label
           >
 
           <select
             name="motivo"
             id="motivo-select"
             required
-            class="w-full border border-gray-300 p-3 rounded-lg shadow-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-secondary"
+            class="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-secondary"
           >
-            <option value="">--Elija una opcion--</option>
-            <option value="dog">Consulta</option>
-            <option value="cat">Aseguradora</option>
-            <option value="hamster">Hamster</option>
-            <option value="parrot">Parrot</option>
-            <option value="spider">Spider</option>
-            <option value="goldfish">Goldfish</option>
+            <option value="">--Elija una opción--</option>
+            <option value="Cotizar">Cotizar</option>
+            <option value="Consulta">Consulta</option>
+            <option value="Productores">Productores</option>
           </select>
         </div>
       </div>
 
       <div class="mt-1 col-span-2">
-        <div>
+        <div class="relative">
           <label for="text" class="block text-md font-medium text-oscure"
-            >¿Como podemos ayudarte?</label
+            >¿Cómo podemos ayudarte?</label
           >
-          <input
-            id="msg"
-            name="msg"
-            type="text"
-            autocomplete=""
-            required
-            class="w-full sm:h-20 border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-secondary"
-          />
+          <textarea
+            class="form-control resize-textarea w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-secondary"
+            name="mensaje"
+            id="message"
+            required="message"></textarea>
         </div>
       </div>
-      <div class="mt-1 col-span-2">
+      <div class="mt-1 col-span-2 w-1/2 mx-auto">
         <input
           class="w-full bg-primary hover:bg-white text-white font-bold py-2 px-4 border border-primary hover:text-primary rounded"
           type="submit"
