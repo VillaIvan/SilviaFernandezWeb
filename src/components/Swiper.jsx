@@ -53,7 +53,11 @@ export const ServiceData = [
 
 const ActiveSlider = () => {
   return (
-    <div className=" my-20 landing-section" data-header-color="#0F7261">
+    <div
+      id="servicios"
+      className=" my-20 landing-section"
+      data-header-color="#0F7261"
+    >
       <Swiper
         breakpoints={{
           "@0.75": {

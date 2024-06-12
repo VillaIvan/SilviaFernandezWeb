@@ -1,10 +1,18 @@
 ---
 // components/CounterUp.astro
 const { dataVal, text } = Astro.props;
+const formattedDataVal =
+  dataVal >= 1000 ? "+" + (dataVal / 1000).toFixed(1) + "K" : "+" + dataVal;
 ---
 
-<span
+<!-- <span
   class="num text-7xl font-black text-center mx-auto text-primary landing-section"
   data-header-color="#0F7261"
   data-val={dataVal}></span>
+<p class="text-xl font-medium text-center text-primary">{text}</p> -->
+<span
+  class="num text-7xl font-black text-center mx-auto text-primary landing-section"
+  data-header-color="#0F7261"
+  data-val={dataVal}>{formattedDataVal}</span
+>
 <p class="text-xl font-medium text-center text-primary">{text}</p>

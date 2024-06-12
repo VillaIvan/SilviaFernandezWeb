@@ -19,7 +19,7 @@ import logo from "@/components/assets/SFslogan.png";
     >
       <span class="sr-only">Abrir menu</span>
       <svg
-        class="w-5 h-5"
+        class="w-5 h-5 text-primary"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -33,15 +33,15 @@ import logo from "@/components/assets/SFslogan.png";
           d="M1 1h15M1 7h15M1 13h15"></path>
       </svg>
     </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+    <div class="hidden w-full md:block md:w-auto z-50" id="navbar-default">
       <ul
-        class="font-black flex flex-col p-4 md:p-0 mt-4 bg-white md:flex-row rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white text-center gap-32 md:gap-10 text-5xl md:text-lg h-[82vh] md:h-auto justify-center items-center"
+        class="font-black flex flex-col p-4 md:p-0 bg-white md:flex-row rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white text-center gap-32 md:gap-10 text-4xl md:text-lg h-screen md:h-auto justify-start mt-32 md:justify-center items-center"
       >
         <li class="text-primary hover:opacity-50 font-semibold">
-          <a href="/">SERVICIOS</a>
+          <a id="servicios-button" href="#servicios">SERVICIOS</a>
         </li>
         <li class="text-primary hover:opacity-50 font-semibold">
-          <a href="/">NOSOTROS</a>
+          <a id="nosotros-button" href="#nosotros">NOSOTROS</a>
         </li>
         <li class="text-white hover:text-primary font-semibold">
           <a
@@ -58,14 +58,40 @@ import logo from "@/components/assets/SFslogan.png";
 <script>
   const menuToggle = document.getElementById("menu-toggle");
   const navList = document.getElementById("navbar-default");
+  const menuLinks = navList.querySelectorAll("a");
 
   menuToggle.addEventListener("click", () => {
     navList.classList.toggle("hidden");
   });
+
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth < 768) {
+        navList.classList.add("hidden");
+      }
+    });
+  });
+
   document
     .getElementById("contact-button")
     .addEventListener("click", function (event) {
       event.preventDefault();
       document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    });
+  document
+    .getElementById("servicios-button")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document
+        .getElementById("servicios")
+        .scrollIntoView({ behavior: "smooth" });
+    });
+  document
+    .getElementById("nosotros-button")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document
+        .getElementById("nosotros")
+        .scrollIntoView({ behavior: "smooth" });
     });
 </script>

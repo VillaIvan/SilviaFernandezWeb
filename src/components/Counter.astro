@@ -3,31 +3,43 @@ import CounterUp from "./CounterUp.astro";
 ---
 
 <section
-  class="max-w-7xl mx-auto flex flex-col gap-10 md:gap-4 md:flex-row justify-around items-center my-20 landing-section"
+  class="max-w-7xl mx-auto flex flex-col flex-wrap gap-3 md:gap-4 sm:flex-row justify-around items-center my-20 landing-section"
   data-header-color="#0F7261"
 >
   <div
-    class="w-72 text-center bg-white py-8 px-6 rounded-lg sm:px-10 border border-secondary border-opacity-40"
+    class="w-64 text-center bg-white py-8 px-6 rounded-lg sm:px-10 border border-secondary border-opacity-40"
   >
     <CounterUp dataVal="20" text="Colaboradores" />
   </div>
   <div
-    class="w-72 text-center bg-white py-8 px-6 rounded-lg sm:px-10 border border-secondary border-opacity-40"
+    class="w-64 text-center bg-white py-8 px-6 rounded-lg sm:px-10 border border-secondary border-opacity-40"
   >
     <CounterUp dataVal="3500" text="Clientes" />
   </div>
   <div
-    class="w-72 text-center bg-white py-8 px-6 rounded-lg sm:px-10 border border-secondary border-opacity-40"
+    class="w-64 text-center bg-white py-8 px-6 rounded-lg sm:px-10 border border-secondary border-opacity-40"
   >
     <CounterUp dataVal="28" text="Aseguradoras" />
   </div>
-  <script>
-    let valueDisplays = document.querySelectorAll(".num");
-    let interval = 5000;
+  <div
+    class="w-64 text-center bg-white py-8 px-6 rounded-lg sm:px-10 border border-secondary border-opacity-40"
+  >
+    <CounterUp dataVal="50" text="Productores" />
+  </div>
+</section>
 
+<script>
+  // Esperamos a que el contenido se cargue completamente antes de ejecutar el script
+  document.addEventListener("DOMContentLoaded", function () {
+    // Seleccionamos todos los elementos con la clase "num"
+    let valueDisplays = document.querySelectorAll(".num");
+
+    // Iteramos sobre cada elemento
     valueDisplays.forEach((valueDisplay) => {
-      let startValue = 0;
+      // Obtenemos el valor final del atributo "data-val"
       let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+
+      // Verificamos si el valor es un número válido
       if (isNaN(endValue)) {
         console.error(
           "El atributo data-val no es un número válido:",
@@ -35,15 +47,36 @@ import CounterUp from "./CounterUp.astro";
         );
         return;
       }
-      let duration = Math.floor(interval / endValue);
 
-      let counter = setInterval(() => {
-        startValue += 1;
-        valueDisplay.textContent = "+" + startValue.toString();
-        if (startValue === endValue) {
-          clearInterval(counter);
+      // Creamos un contador
+      let current = 0;
+      let duration = 5000; // Duración de la animación en milisegundos
+      let step = Math.ceil(duration / endValue); // Paso para cada iteración del contador
+
+      // Función para animar el contador
+      function animateValue() {
+        current += 1;
+        valueDisplay.textContent = "+" + current.toString(); // Mostramos el valor actual
+        if (current < endValue) {
+          // Si no hemos alcanzado el valor final, continuamos la animación
+          setTimeout(animateValue, step);
+        } else {
+          // Si hemos alcanzado el valor final, mostramos el valor formateado
+          valueDisplay.textContent = "+" + formatNumber(endValue);
         }
-      }, duration);
+      }
+
+      // Iniciamos la animación
+      animateValue();
     });
-  </script>
-</section>
+  });
+
+  // Función para formatear el número con "K" si es mayor o igual a 1000
+  function formatNumber(value) {
+    if (value >= 1000) {
+      return (value / 1000).toFixed(1) + "K";
+    } else {
+      return value.toString();
+    }
+  }
+</script>
