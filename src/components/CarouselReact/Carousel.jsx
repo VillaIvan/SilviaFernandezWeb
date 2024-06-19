@@ -31,7 +31,7 @@ export default function App() {
         <SwiperSlide>
           <div className="fondo4 parallax image relative flex flex-col md:flex-row items-center justify-center  md:h-[100%] my-auto gap-8   ">
             <div className="absolute inset-0 bg-black bg-opacity-50 " />
-            <div className="w-[80%] md:w-[65%] lg:w-[700px] xl:w-[700px] flex flex-col gap-10 justify-center mx-auto  sm:mx-0  rounded-xl p-5  z-10">
+            <div className="w-[80%] md:w-[65%] lg:w-[700px] xl:w-[700px] flex flex-col gap-10 justify-center mx-auto  sm:mx-0 rounded-xl p-5 z-10 animate-bounce-fade-in">
               <h3 className="text-2xl text-white text-center">
                 Tu auto, más que seguro
               </h3>
