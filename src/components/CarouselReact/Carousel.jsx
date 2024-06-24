@@ -39,7 +39,7 @@ export default function App() {
                 Viaja con la tranquilidad de tener la mejor cobertura.
               </h1>
 
-              <button className=" w-48 md:w-[30%] px-[2rem] bg-white text-lg p-3 text-primary mx-auto font-semibold hover:bg-primary hover:text-white rounded-md ">
+              <button className=" w-48 md:w-[30%] px-[2rem] bg-white text-lg p-3 text-primary mx-auto font-semibold hover:bg-primary hover:text-white rounded-md hover:animate-pop">
                 COTIZÁ AHORA
               </button>
             </div>
@@ -57,7 +57,7 @@ export default function App() {
                 importa.
               </h1>
 
-              <button className=" w-48 md:w-[30%] px-[2rem] bg-white text-lg p-3 text-primary mx-auto font-semibold hover:bg-primary hover:text-white rounded-md ">
+              <button className=" w-48 md:w-[30%] px-[2rem] bg-white text-lg p-3 text-primary mx-auto font-semibold hover:bg-primary hover:text-white rounded-md hover:animate-pop">
                 COTIZÁ AHORA
               </button>
             </div>
@@ -74,7 +74,7 @@ export default function App() {
                 Soluciones a medida para que no tengas que preocuparte
               </h1>
 
-              <button className=" w-48 md:w-[30%] px-[2rem] bg-white text-lg p-3 text-primary mx-auto font-semibold hover:bg-primary hover:text-white rounded-md ">
+              <button className=" w-48 md:w-[30%] px-[2rem] bg-white text-lg p-3 text-primary mx-auto font-semibold hover:bg-primary hover:text-white rounded-md hover:animate-pop">
                 COTIZÁ AHORA
               </button>
             </div>
@@ -92,7 +92,7 @@ export default function App() {
                 Soluciones a medida para que no tengas que preocuparte
               </h1>
 
-              <button className=" w-48 md:w-[30%] px-[2rem] bg-white text-lg p-3 text-primary mx-auto font-semibold hover:bg-primary hover:text-white rounded-md ">
+              <button className=" w-48 md:w-[30%] px-[2rem] bg-white text-lg p-3 text-primary mx-auto font-semibold hover:bg-primary hover:text-white rounded-md hover:animate-pop">
                 COTIZÁ AHORA
               </button>
             </div>
