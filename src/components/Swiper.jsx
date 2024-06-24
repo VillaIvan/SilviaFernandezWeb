@@ -81,7 +81,7 @@ const ActiveSlider = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode]}
+        modules={[FreeMode, Pagination]}
         className="max-w-[100%] lg:max-w-[90%]  "
       >
         {ServiceData.map((item) => (

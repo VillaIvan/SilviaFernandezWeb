@@ -51,7 +51,7 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #0f7261;
+  color: #ffffff;
 }
 
 .swiper-button-next:after,
@@ -65,9 +65,11 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #0f7261 !important;
+  background-color: #ffffff !important;
 }
 
 .swiper-pagination-bullet {
   background-color: #999999;
 }
+
+/* #0f7261 */
