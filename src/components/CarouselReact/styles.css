@@ -48,3 +48,26 @@ body {
   max-width: 100%;
   position: relative;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0f7261;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 50px;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0f7261 !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #999999;
+}

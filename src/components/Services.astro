@@ -1,0 +1,17 @@
+---
+import Swiper from "@/components/Swiper.jsx";
+import Tick from "./Tick.astro";
+---
+
+<div
+  id="servicios"
+  class="w-full pt-20 flex flex-col landing-section"
+  data-header-color="#0F7261"
+>
+  <Tick />
+  <h1 class="text-primary font-bold text-2xl mx-auto p-3">
+    SERVICIOS DISPONIBLES
+  </h1>
+</div>
+
+<Swiper client:load />
