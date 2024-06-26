@@ -26,7 +26,9 @@ import Foto from "@/components/assets/single.jpeg";
           Compromiso por el servicio prestado y profesionalismo en toda su
           gestión
         </h3>
-        <p class="mt-4 text-lg text-primary font-secondary mb-12 text-left">
+        <p
+          class="mt-4 text-xl text-primary font-secondary mb-12 text-left font-semibold"
+        >
           En nuestra empresa desde 1989 nos preocupamos por el bienestar y la
           seguridad de nuestros clientes. Contamos con un equipo altamente
           profesional y comprometido con los intereses de quienes nos confían su
@@ -37,13 +39,24 @@ import Foto from "@/components/assets/single.jpeg";
           requerimientos y presupuesto.
         </p>
         <div class="flex justify-center">
-          <button
-            class="w-48 px-[2rem] bg-primary text-lg p-3 text-white font-semibold hover:bg-white hover:text-primary rounded-md border hover:border-primary hover:animate-pop"
+          <a
+            id="about-button"
+            href="#contact"
+            class="w-48 px-[2rem] bg-primary text-lg p-3 text-white font-semibold hover:bg-white hover:text-primary rounded-md border hover:border-primary hover:animate-pop text-center"
           >
-            CONOCÉ MAS
-          </button>
+            CONOCÉ MAS</a
+          >
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  document
+    .getElementById("about-button")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    });
+</script>
