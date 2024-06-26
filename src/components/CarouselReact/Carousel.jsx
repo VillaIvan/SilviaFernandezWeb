@@ -57,7 +57,7 @@ export default function App() {
           <div className="fondo4 parallax image relative flex flex-col md:flex-row items-center justify-center  md:h-[100%] my-auto gap-8   ">
             <div className="absolute inset-0 bg-black bg-opacity-50 " />
             <div className="w-[80%] md:w-[65%] lg:w-[1000px] xl:w-[1400px] flex flex-col gap-10 justify-center mx-auto  sm:mx-0 rounded-xl p-5 z-10 animate-bounce-fade-in">
-              <h3 className="md:text-8xl  text-7xl text-white text-center font-semibold">
+              <h3 className="md:text-8xl  text-5xl text-white text-center font-semibold">
                 Tu auto, más que seguro
               </h3>
               <h1 className="text-2xl text-white text-center ">
@@ -100,7 +100,7 @@ export default function App() {
           <div className="fondo3 parallax image relative flex flex-col md:flex-row items-center justify-center  md:h-[100%] my-auto gap-8   ">
             <div className="absolute inset-0 bg-black bg-opacity-50 " />
             <div className="w-[80%] md:w-[65%] lg:w-[1000px] xl:w-[1400px] flex flex-col gap-10 justify-center mx-auto  sm:mx-0 rounded-xl p-5 z-10 animate-bounce-fade-in">
-              <h3 className="md:text-8xl  text-7xl text-white text-center font-semibold">
+              <h3 className="md:text-8xl  text-5xl text-white text-center font-semibold">
                 Cuidamos tu esfuerzo
               </h3>
               <h1 className="text-2xl text-white text-center ">
