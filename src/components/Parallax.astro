@@ -26,4 +26,11 @@
     max-width: 100%;
     position: relative;
   }
+
+  /* Deshabilitar parallax específicamente para iOS */
+  @supports (-webkit-overflow-scrolling: touch) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
 </style>
